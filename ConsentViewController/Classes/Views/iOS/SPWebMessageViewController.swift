@@ -5,6 +5,7 @@
 //  Created by Andre Herculano on 21.05.21.
 //
 
+#if os(iOS)
 import Foundation
 import WebKit
 
@@ -238,3 +239,4 @@ import WebKit
         }
     }
 }
+#endif

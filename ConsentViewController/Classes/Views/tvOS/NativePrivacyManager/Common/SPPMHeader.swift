@@ -5,8 +5,7 @@
 //  Created by Andre Herculano on 28.05.21.
 //
 
-import Foundation
-import TVUIKit
+import UIKit
 
 extension UILabel {
     func setup(from spText: SPNativeText?) {

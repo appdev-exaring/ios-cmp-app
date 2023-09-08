@@ -5,7 +5,7 @@
 //  Created by Andre Herculano on 13.11.20.
 //
 // swiftlint:disable line_length
-
+#if os(iOS)
 import Foundation
 import WebKit
 
@@ -109,3 +109,4 @@ import WebKit
         getCookies { handler($0[name, default: ""], $1) }
     }
 }
+#endif
