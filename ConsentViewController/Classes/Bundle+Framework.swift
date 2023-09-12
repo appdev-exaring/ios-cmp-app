@@ -16,7 +16,7 @@ extension Foundation.Bundle {
         #if SWIFT_PACKAGE
 
         #if os(tvOS)
-        return Bundle(for: ConsentViewController_tvOS.self)
+        return Bundle(url: Bundle.main.bundleURL.appending(path: "ConsentViewController-tvOSResources_ConsentViewControllerResources.bundle"))!
         #else
         return Bundle.module
         #endif
