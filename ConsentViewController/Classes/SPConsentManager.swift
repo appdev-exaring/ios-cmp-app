@@ -150,8 +150,7 @@ import ConsentViewController_tvOSResources
                     campaignType: type,
                     viewData: content.homeView,
                     pmData: content,
-                    delegate: self,
-                    nibName: Bundle(for: ConsentViewController_tvOS.self).bundleIdentifier
+                    delegate: self
                 )
                 controller.categories = message.categories ?? []
                 controller.delegate = self
@@ -163,8 +162,7 @@ import ConsentViewController_tvOSResources
                     campaignType: type,
                     viewData: content.homeView,
                     pmData: content,
-                    delegate: self,
-                    nibName: Bundle(for: ConsentViewController_tvOS.self).bundleIdentifier
+                    delegate: self
                 )
                 controller.delegate = self
                 controller.ccpaConsents = userData.ccpa?.consents
