@@ -8,6 +8,11 @@
 
 import Foundation
 import UIKit
+
+#if os(tvOS)
+import ConsentViewController_tvOSResources
+#endif
+
 // swiftlint:disable file_length
 @objcMembers public class SPConsentManager: NSObject {
     static let DefaultTimeout = TimeInterval(30)
@@ -145,7 +150,8 @@ import UIKit
                     campaignType: type,
                     viewData: content.homeView,
                     pmData: content,
-                    delegate: self
+                    delegate: self,
+                    nibName: Bundle(for: ConsentViewController_tvOS.self).bundleIdentifier
                 )
                 controller.categories = message.categories ?? []
                 controller.delegate = self
@@ -157,7 +163,8 @@ import UIKit
                     campaignType: type,
                     viewData: content.homeView,
                     pmData: content,
-                    delegate: self
+                    delegate: self,
+                    nibName: Bundle(for: ConsentViewController_tvOS.self).bundleIdentifier
                 )
                 controller.delegate = self
                 controller.ccpaConsents = userData.ccpa?.consents
