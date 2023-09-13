@@ -14,7 +14,7 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/johnxnguyen/Down", from: "0.11.0"),
-    .package(path: "tvOS-Resources")
+    .package(path: "/tvOS-Resources")
   ],
   targets: [
     .target(
