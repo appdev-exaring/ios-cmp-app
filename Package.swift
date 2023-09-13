@@ -14,14 +14,14 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/johnxnguyen/Down", from: "0.11.0"),
-    .package(url: "https://github.com/appdev-exaring/tvos-cmp-app", from: "7.3.0")
+    .package(path: "tvOS-Resources")
   ],
   targets: [
     .target(
       name: "ConsentViewController",
       dependencies: [
         "Down",
-        .product(name: "ConsentViewController-tvOSResources", package: "tvos-cmp-app", condition: .when(platforms: [.tvOS]))
+        .product(name: "ConsentViewController-tvOSResources", package: "tvOS-Resources", condition: .when(platforms: [.tvOS]))
       ],
       path: "ConsentViewController",
       exclude: [
