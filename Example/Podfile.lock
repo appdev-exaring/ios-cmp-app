@@ -1,13 +1,13 @@
 PODS:
-  - ConsentViewController (7.3.0):
-    - Down (~> 0.9.0)
-  - Down (0.9.5)
-  - IQKeyboardManagerSwift (6.5.10)
+  - ConsentViewController (7.3.1):
+    - Down (~> 0.11.0)
+  - Down (0.11.0)
+  - IQKeyboardManagerSwift (6.5.12)
   - JSONView (0.0.3)
-  - Nimble (10.0.0)
-  - Quick (5.0.1)
-  - SwiftLint (0.49.1)
-  - Wormholy (1.6.5)
+  - Nimble (12.2.0)
+  - Quick (7.2.0)
+  - SwiftLint (0.52.4)
+  - Wormholy (1.7.0)
 
 DEPENDENCIES:
   - ConsentViewController (from `../`)
@@ -33,15 +33,15 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ConsentViewController: 5f243c4b1f7285a06a96bc2867a0c6076273b94e
-  Down: 7321a72d0747ed0061dce948bcff518fcb6df2bd
-  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  ConsentViewController: e675e46d7d4ba0e6983194cb0e8db61350eb82c2
+  Down: b6ba1bc985c9d2f4e15e3b293d2207766fa12612
+  IQKeyboardManagerSwift: 371b08cb39664fb56030f5345c815a4ffc74bbc0
   JSONView: ba9049102fae7ad70de40234d0b7c60986e61e4c
-  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
-  Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
-  SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
-  Wormholy: 3252bc3e55a1847ef9a0976c1377bd77bf3635fa
+  Nimble: d67da24eb9da4227b2dbbf4eb49cc29073c9066b
+  Quick: 73ac215f23a6a0eaa59f4ee142802b3f4dba86bb
+  SwiftLint: 1cc5cd61ba9bacb2194e340aeb47a2a37fda00b3
+  Wormholy: ab1c8c2f02f58587a0941deb0088555ffbf039a1
 
-PODFILE CHECKSUM: 35e1e9b8f56e528071d10331de4ee3526851010c
+PODFILE CHECKSUM: c35306cef6e15c262f48591716a51cfea3175b37
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1
