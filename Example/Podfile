@@ -1,5 +1,5 @@
 use_frameworks!
-platform :ios, '10.0'
+platform :ios, '15.0'
 install! 'cocoapods', :share_schemes_for_development_pods => true
 
 target 'AuthExample' do
@@ -16,7 +16,7 @@ target 'ConsentViewController_Example' do
 end
 
 target 'NativePMExampleApp' do
-  platform :tvos, '10.0'
+  platform :tvos, '15.0'
   pod 'ConsentViewController', :path => '../'
   pod 'SwiftLint'
 end
@@ -76,7 +76,7 @@ target 'ObjC-ExampleAppUITests' do
 end
 
 target 'NativePMExampleAppUITests' do
-  platform :tvos, '10.0'
+  platform :tvos, '15.0'
   inherit! :search_paths
   # Pods for testing
   pod 'ConsentViewController', :path => '../'
