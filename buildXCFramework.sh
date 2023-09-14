@@ -25,8 +25,10 @@ xcodebuild archive \
     SKIP_INSTALL=NO \
     BUILD_LIBRARY_FOR_DISTRIBUTION=YES &&
 
-rm -r ./XCFramework/ConsentViewController.xcframework
-rm -r ./XCFramework/ConsentViewController.xcframework.zip
+FOLDER = ./XCFramework
+if [ -d "$FOLDER" ]; then
+    rm -r $FOLDER
+fi
 
 xcodebuild -create-xcframework \
     -framework './build/ConsentViewController-iOS.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/ConsentViewController.framework' \
@@ -35,4 +37,12 @@ xcodebuild -create-xcframework \
     -framework './build/ConsentViewController-tvOS.framework-tvOS.xcarchive/Products/Library/Frameworks/ConsentViewController.framework' \
     -output './XCFramework/ConsentViewController.xcframework'
 
+xcodebuild -create-xcframework \
+    -framework './build/ConsentViewController-iOS.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/Down.framework' \
+    -framework './build/ConsentViewController-iOS.framework-iOS.xcarchive/Products/Library/Frameworks/Down.framework' \
+    -framework './build/ConsentViewController-tvOS.framework-tvossimulator.xcarchive/Products/Library/Frameworks/Down.framework' \
+    -framework './build/ConsentViewController-tvOS.framework-tvOS.xcarchive/Products/Library/Frameworks/Down.framework' \
+    -output './XCFramework/Down.xcframework'
+
 zip -r ./XCFramework/ConsentViewController.xcframework.zip ./XCFramework/ConsentViewController.xcframework
+zip -r ./XCFramework/Down.xcframework.zip ./XCFramework/Down.xcframework

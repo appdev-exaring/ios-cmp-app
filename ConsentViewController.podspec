@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.exclude_files = 'ConsentViewController/Classes/Views/tvOS'
   s.tvos.deployment_target = '14.0'
   s.tvos.exclude_files = 'ConsentViewController/Classes/Views/iOS'
-  s.tvos.dependency 'Down', '~> 0.11.0'
+  s.dependency 'Down', '~> 0.11.0' # Linked for both platforms for SPM binary frameworks support
   s.resource_bundles = { 'ConsentViewController' => ['ConsentViewController/Assets/**/*', 'Pod/Classes/**/*.{storyboard,xib,xcassets,json,imageset,png,js}'] }
   s.resources = "ConsentViewController/**/*.{js,json,png}"
   s.info_plist = {
