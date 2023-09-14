@@ -8,9 +8,9 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/SourcePointUSA/ios-cmp-app.git', :tag => s.version.to_s }
   s.swift_version    = '5.0'
   s.source_files = 'ConsentViewController/Classes/**/*'
-  s.ios.deployment_target = '15.0'
+  s.ios.deployment_target = '14.0'
   s.ios.exclude_files = 'ConsentViewController/Classes/Views/tvOS'
-  s.tvos.deployment_target = '15.0'
+  s.tvos.deployment_target = '14.0'
   s.tvos.exclude_files = 'ConsentViewController/Classes/Views/iOS'
   s.tvos.dependency 'Down', '~> 0.11.0'
   s.resource_bundles = { 'ConsentViewController' => ['ConsentViewController/Assets/**/*', 'Pod/Classes/**/*.{storyboard,xib,xcassets,json,imageset,png,js}'] }
